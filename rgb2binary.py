@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import glob
 
-folder_dir = './train_w/*.*'
-folder_output = 'train_ww'
+folder_dir = './train_w/*.*' #Mask
+folder_output = 'train_ww' #carpeta de las mascaras nuevas
 
 for bb,file in enumerate (glob.glob(folder_dir)):
     img = cv2.imread(file)
